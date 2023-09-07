@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="src/assets/title.png" alt="App Logo" width="150">
-</p>
+
 
 <h1 align="center">🌟 Moj prijatelj Liu 🌟</h1>
 
