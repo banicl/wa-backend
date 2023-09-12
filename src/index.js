@@ -50,13 +50,19 @@ app.post('/api/login', async (req, res) => {
       return res.status(401).json({ message: 'Invalid password.' });
     }
 
-    res.status(200).json({ message: 'Login successful.' });
+    res.status(200).json({ message: 'Login successful.', user });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Login failed.' });
   }
 });
 
+app.get('/api', (req, res) => {
+  res.status(200).json({ message: 'API is working!' });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
+
+
 });
